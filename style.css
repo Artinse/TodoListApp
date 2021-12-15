@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+  width: 1140px;
+}
+
+body {
+  background-color: #000;
+  height: 100%;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  color: #ffff;
+  text-shadow: aqua 1px 1px;
+}
+
+.todoapp-title {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 42px;
+}
+
+.todoapp-title::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: url(/img/Santa_hat.svg) no-repeat;
+}
+
+.todoapp-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.todoapp-form-wrapper {
+  margin-top: 20px;
+  border: 5px solid teal;
+  width: 500px;
+  height: auto;
+  padding: 30px;
+}
+
+.mainBtn,
+.deleteBtn {
+  border: none;
+  outline: none;
+  border: 2px solid teal;
+  background-color: transparent;
+  color: #ffff;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 22px;
+  text-shadow: inherit;
+}
+
+.mainBtn:hover {
+  background-color: #fff;
+  transition: 0.4s ease background-color;
+  color: teal;
+  border-color: #fff;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+input {
+  display: block;
+  border: 2px solid teal;
+  background-color: transparent;
+  outline: none;
+  padding: 10px;
+  color: teal;
+  font-size: 24px;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.todoapp-tasks {
+  margin-top: 60px;
+}
+
+.tasks-list {
+  list-style-type: none;
+}
+
+.task-item {
+  border: 2px solid teal;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.deleteBtn {
+  align-self: flex-end;
+}
+
+.deleteBtn:hover {
+  background-color: red;
+  transition: 0.7s ease background-color;
+}
+
+.task-list-title {
+  font-size: 26px;
+  text-decoration: underline;
+}
+
+.task-list-descr {
+  margin-top: 30px;
+}

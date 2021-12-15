@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <main class="todoapp">
+      <section class="todoapp-control">
+        <h1 class="todoapp-title">TodoApp</h1>
+        <div class="todoapp-form-wrapper">
+          <form name="addTask" class="todoapp-form">
+            <label>
+              New task title:
+              <input type="text" name="title" />
+            </label>
+            <label>
+              New task description:
+              <input type="text" name="body" />
+            </label>
+            <button class="mainBtn" type="submit">Create</button>
+          </form>
+        </div>
+      </section>
+      <section class="todoapp-tasks container">
+				<ul class="tasks-list">
+					<li class="task-item">
+						<span class="task-list-title">Task title</span>
+						<p class="task-list-descr">Lorem ipsum dolor sit amet.</p>
+						<button type="button" class="deleteBtn">Delete</button>
+					</li>
+				</ul>
+			</section>
+    </main>
+    <script></script>
+    <script src="script.js"></script>
+  </body>
+</html>
